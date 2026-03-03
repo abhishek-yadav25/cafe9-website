@@ -1,0 +1,188 @@
+{% extends 'main/master.html' %}
+{% load static %}
+
+{% block title %}
+Menu | Cafee⁹'
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container my-5">
+
+<h1 class="text-center mb-4">
+Our Menu
+</h1>
+
+</div>
+
+
+<!-- ===== MENU SECTION START ===== -->
+<section class="container my-5">
+
+<!-- ===== COFFEE START ===== -->
+<h2 class="section-title text-center mb-4">Coffee</h2>
+
+<div class="row g-4 mb-5">
+
+<div class="col-sm-6 col-md-3">
+<div class="card menu-card h-100">
+<img src="{% static 'main/images/espresso.jpeg' %}" class="card-img-top">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title">Espresso</h5>
+<p class="card-text mt-auto fw-bold">₹120</p>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-md-3">
+<div class="card menu-card h-100">
+<img src="{% static 'main/images/cappuccino.jpeg' %}" class="card-img-top">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title">Cappuccino</h5>
+<p class="card-text mt-auto fw-bold">₹150</p>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-md-3">
+<div class="card menu-card h-100">
+<img src="{% static 'main/images/latte.jpeg' %}" class="card-img-top">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title">Latte</h5>
+<p class="card-text mt-auto fw-bold">₹160</p>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-md-3">
+<div class="card menu-card h-100">
+<img src="{% static 'main/images/mocha.webp' %}" class="card-img-top">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title">Mocha</h5>
+<p class="card-text mt-auto fw-bold">₹180</p>
+</div>
+</div>
+</div>
+
+</div>
+<!-- ===== COFFEE END ===== -->
+
+
+<!-- ===== SNACKS START ===== -->
+<h2 class="section-title text-center mb-4">Snacks</h2>
+
+<div class="row g-4 mb-5">
+
+<div class="col-sm-6 col-md-4">
+<div class="card menu-card h-100">
+<img src="{% static 'main/images/garlic-bread.jpeg' %}" class="card-img-top">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title">Garlic Bread</h5>
+<p class="fw-bold mt-auto">₹90</p>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-md-4">
+<div class="card menu-card h-100">
+<img src="{% static 'main/images/sandwich.jpeg' %}" class="card-img-top">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title">Veg Sandwich</h5>
+<p class="fw-bold mt-auto">₹120</p>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-md-4">
+<div class="card menu-card h-100">
+<img src="{% static 'main/images/cheez-pizza.jpeg' %}" class="card-img-top">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title">Cheese Pizza Slice</h5>
+<p class="fw-bold mt-auto">₹140</p>
+</div>
+</div>
+</div>
+
+</div>
+<!-- ===== SNACKS END ===== -->
+
+
+<!-- ===== BEVERAGES START ===== -->
+<h2 class="section-title text-center mb-4">Beverages</h2>
+
+<div class="row g-4 mb-5">
+
+<div class="col-sm-6 col-md-4">
+<div class="card menu-card h-100">
+<img src="{% static 'main/images/cold brew.jpeg' %}" class="card-img-top">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title">Cold Coffee</h5>
+<p class="fw-bold mt-auto">₹130</p>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-md-4">
+<div class="card menu-card h-100">
+<img src="{% static 'main/images/ice-tea.jpeg' %}" class="card-img-top">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title">Lemon Ice Tea</h5>
+<p class="fw-bold mt-auto">₹110</p>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-md-4">
+<div class="card menu-card h-100">
+<img src="{% static 'main/images/hot-ch.jpeg' %}" class="card-img-top">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title">Hot Chocolate</h5>
+<p class="fw-bold mt-auto">₹170</p>
+</div>
+</div>
+</div>
+
+</div>
+<!-- ===== BEVERAGES END ===== -->
+
+</section>
+<!-- ===== MENU SECTION END ===== -->
+
+
+<!-- ===== WEEKEND OFFERS START ===== -->
+<div class="container">
+
+<h3 class="border-bottom pb-2 text-center mt-5">
+Weekend Offers & Combos
+</h3>
+
+<ul class="list-group mb-5">
+
+<li class="list-group-item d-flex justify-content-between">
+Combo 1: Cappuccino + Garlic Bread
+<span><del>₹240</del> <strong class="text-success">₹180</strong></span>
+</li>
+
+<li class="list-group-item d-flex justify-content-between">
+Combo 2: Latte + Veg Sandwich
+<span><del>₹280</del> <strong class="text-success">₹210</strong></span>
+</li>
+
+<li class="list-group-item d-flex justify-content-between">
+Combo 3: Cold Coffee + Cheese Pizza Slice
+<span><del>₹310</del> <strong class="text-success">₹240</strong></span>
+</li>
+
+<li class="list-group-item d-flex justify-content-between">
+Buy 2 Espressos, Get 1 Free
+<span class="text-success"><strong>₹240</strong></span>
+</li>
+
+</ul>
+
+</div>
+<!-- ===== WEEKEND OFFERS END ===== -->
+
+
+{% endblock %}

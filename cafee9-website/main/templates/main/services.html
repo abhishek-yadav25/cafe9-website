@@ -1,0 +1,124 @@
+{% extends 'main/master.html' %}
+{% load static %}
+
+{% block title %}
+Services | Cafee9
+{% endblock %}
+
+{% block content %}
+
+<!-- ===== HERO SECTION START ===== -->
+<section class="hero-services d-flex align-items-center justify-content-center text-white text-center">
+  <div class="hero-overlay"></div>
+  <div class="position-relative">
+    <h1 class="fw-bold mb-2">Our Services</h1>
+    <p class="lead">
+      Everything you need for the perfect café experience — coffee, ambiance, and more.
+    </p>
+  </div>
+</section>
+<!-- ===== HERO SECTION END ===== -->
+
+
+<!-- ===== SERVICES CARDS START ===== -->
+<div class="container my-5">
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-md-4">
+      <div class="service-card p-4 text-center">
+        <img src="{% static 'main/images/beans.jpg' %}" class="service-icon mb-3">
+        <h4 class="fw-bold">Fresh Brewed Coffee</h4>
+        <p class="text-muted">Premium roasted beans + expert brewing. Zero compromise.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="service-card p-4 text-center">
+        <img src="{% static 'main/images/cozydesign.jpg' %}" class="service-icon mb-3">
+        <h4 class="fw-bold">Cozy Dine-In Space</h4>
+        <p class="text-muted">Sit peacefully. Work, chill, or meet friends — no rush.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="service-card p-4 text-center">
+        <img src="{% static 'main/images/takeaway.jpeg' %}" class="service-icon mb-3">
+        <h4 class="fw-bold">Takeaway & Delivery</h4>
+        <p class="text-muted">Fast service for busy people. Great taste on the go.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="service-card p-4 text-center">
+        <img src="{% static 'main/images/combos.jpg' %}" class="service-icon mb-3">
+        <h4 class="fw-bold">Weekend Combos</h4>
+        <p class="text-muted">Exclusive offers every weekend — quality and savings together.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="service-card p-4 text-center">
+        <img src="{% static 'main/images/special-drinks.jpg' %}" class="service-icon mb-3">
+        <h4 class="fw-bold">Specialty Drinks</h4>
+        <p class="text-muted">Limited-edition coffee & beverages you won’t find anywhere else.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="service-card p-4 text-center">
+        <img src="{% static 'main/images/staff.jpeg' %}" class="service-icon mb-3">
+        <h4 class="fw-bold">Friendly Staff</h4>
+        <p class="text-muted">We remember your face and your favorite order — real hospitality.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- ===== SERVICES CARDS END ===== -->
+
+
+<!-- ===== EXPLORE MENU BUTTON START ===== -->
+<div class="text-center mt-5">
+  <a href="/menu/" class="btn btn-dark btn-lg rounded-pill px-4">
+    Explore Menu
+  </a>
+</div>
+<br>
+<!-- ===== EXPLORE MENU BUTTON END ===== -->
+
+
+<!-- ===== EVENTS SECTION START ===== -->
+<section id="events" class="events">
+
+  <h2 class="section-title">Events & Celebrations</h2>
+
+  <div class="event-content">
+
+    <div class="event-text">
+      <h3>Café on Rent for Special Occasions</h3>
+
+      <p>
+        Host birthdays, anniversaries, corporate meetings, and private parties at our café.
+        Fully customizable menu and decoration options available.
+      </p>
+
+      <ul>
+        <li>Birthday Parties</li>
+        <li>Anniversary Celebrations</li>
+        <li>Corporate Meet-ups</li>
+        <li>Kitty Parties</li>
+      </ul>
+
+      <a href="/contact/" class="event-btn">Book Now</a>
+    </div>
+
+    <div class="event-img">
+      <img src="{% static 'main/images/events.jpeg' %}">
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== EVENTS SECTION END ===== -->
+
+{% endblock %}

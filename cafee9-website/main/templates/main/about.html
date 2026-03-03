@@ -1,0 +1,172 @@
+{% extends 'main/master.html' %}
+{% load static %}
+
+{% block title %}
+About | Cafee⁹'
+{% endblock %}
+
+
+{% block content %}
+
+<!-- ===== COFFEE PHILOSOPHY START ===== -->
+<section class="container my-5">
+
+<h3 class="fw-bold mb-3 text-center">
+Our Coffee Philosophy
+</h3>
+
+<p>
+We don’t chase trends — we chase flavor.
+Every cup at Cafee⁹' is brewed with:
+</p>
+
+<ul class="list-group mb-4">
+<li class="list-group-item">Carefully selected beans</li>
+<li class="list-group-item">No shortcuts in brewing</li>
+<li class="list-group-item">Balanced taste over pretentious styling</li>
+<li class="list-group-item">Simple ingredients done right</li>
+</ul>
+
+</section>
+<!-- ===== COFFEE PHILOSOPHY END ===== -->
+
+
+<!-- ===== PEOPLE SECTION START ===== -->
+<section class="container my-5 text-center">
+
+<h3 class="fw-bold mb-4">
+The People Behind the Coffee
+</h3>
+
+<p>
+We’re not a chain. We’re local.
+Real faces. Real passion.
+The kind of place that remembers your usual order.
+The quality you taste comes from the passion,
+skill, and dedication of our coffee experts.
+</p>
+
+<div class="row justify-content-center mt-4">
+
+<div class="col-md-4">
+
+<img src="{% static 'main/images/barista.jpg' %}"
+class="img-fluid barista-img mb-3"
+alt="Barista">
+
+<h5 class="fw-bold">Our Barista</h5>
+
+<p class="text-muted text-center">
+The magician behind every cup you love.
+</p>
+
+</div>
+</div>
+
+</section>
+<!-- ===== PEOPLE SECTION END ===== -->
+
+
+<!-- ===== SUSTAINABILITY START ===== -->
+<section id="sustain" class="container">
+
+<h2 class="text-center fw-bold mb-3">
+Sustainability
+</h2>
+
+<p class="text-center text-muted mb-4">
+Great coffee shouldn’t harm the planet.
+We brew responsibly.
+</p>
+
+<div class="row g-4">
+
+<div class="col-12 col-sm-6 col-md-3">
+<div class="sustain-card">
+<div class="sustain-img-container">
+<img src="{% static 'main/images/beans.jpg' %}" class="sustain-img">
+</div>
+<div class="sustain-body">
+<h6 class="fw-bold mb-1">Ethical Bean Sourcing</h6>
+<p class="small text-muted mb-0">
+Fair pay & ethical partnerships with growers.
+</p>
+</div>
+</div>
+</div>
+
+
+<div class="col-12 col-sm-6 col-md-3">
+<div class="sustain-card">
+<div class="sustain-img-container">
+<img src="{% static 'main/images/farmer.jpg' %}" class="sustain-img">
+</div>
+<div class="sustain-body">
+<h6 class="fw-bold mb-1">Supporting Local Farmers</h6>
+<p class="small text-muted mb-0">
+We uplift local farms and communities.
+</p>
+</div>
+</div>
+</div>
+
+
+<div class="col-12 col-sm-6 col-md-3">
+<div class="sustain-card">
+<div class="sustain-img-container">
+<img src="{% static 'main/images/no plastics.jpeg' %}" class="sustain-img">
+</div>
+<div class="sustain-body">
+<h6 class="fw-bold mb-1">Reduced Plastic Usage</h6>
+<p class="small text-muted mb-0">
+Eco-friendly cups & zero-waste efforts.
+</p>
+</div>
+</div>
+</div>
+
+
+<div class="col-12 col-sm-6 col-md-3">
+<div class="sustain-card">
+<div class="sustain-img-container">
+<img src="{% static 'main/images/quality .jpg' %}" class="sustain-img">
+</div>
+<div class="sustain-body">
+<h6 class="fw-bold mb-1">Quality Without Compromise</h6>
+<p class="small text-muted mb-0">
+Craftsmanship & perfection in every sip.
+</p>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+<!-- ===== SUSTAINABILITY END ===== -->
+
+
+<!-- ===== PROMISE SECTION START ===== -->
+<section id="promise-section">
+
+<div class="container text-center py-5">
+
+<h3 class="fw-bold mb-3 text-white">
+Our Promise
+</h3>
+
+<p class="lead text-white text-center">
+No fake smiles. No stale brews. No overpriced nonsense.
+</p>
+
+<p class="text-white text-center">
+Just fresh coffee and a place you actually want to return to.
+</p>
+
+</div>
+
+</section>
+<!-- ===== PROMISE SECTION END ===== -->
+
+
+{% endblock %}

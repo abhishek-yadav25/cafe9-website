@@ -1,0 +1,176 @@
+{% extends 'main/master.html' %}
+{% load static %}
+
+{% block title %}
+Home | Cafee⁹'
+{% endblock %}
+
+
+{% block content %}
+
+<!-- ===== CAROUSEL START ===== -->
+<div class="container my-4" style="max-width:800px;">
+
+<div id="cafeCarousel"
+class="carousel slide"
+data-bs-ride="carousel"
+data-bs-interval="3000">
+
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="0" class="active"></button>
+<button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="1"></button>
+<button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="2"></button>
+</div>
+
+<div class="carousel-inner" style="max-height:400px;overflow:hidden;">
+
+<div class="carousel-item active">
+<img src="{% static 'main/images/3.jpg' %}"
+class="d-block w-100"
+style="object-fit:cover;height:400px;">
+</div>
+
+<div class="carousel-item">
+<img src="{% static 'main/images/2.jpg' %}"
+class="d-block w-100"
+style="object-fit:cover;height:400px;">
+</div>
+
+<div class="carousel-item">
+<img src="{% static 'main/images/1.jpeg' %}"
+class="d-block w-100"
+style="object-fit:cover;height:400px;">
+</div>
+
+</div>
+
+<button class="carousel-control-prev"
+type="button"
+data-bs-slide="prev"
+data-bs-target="#cafeCarousel">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next"
+type="button"
+data-bs-slide="next"
+data-bs-target="#cafeCarousel">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+</div>
+<!-- ===== CAROUSEL END ===== -->
+
+
+<!-- ===== ABOUT SECTION START ===== -->
+<div class="container my-5 about-section py-4">
+
+<h2 class="text-center mb-3">About Us</h2>
+
+<p class="text-center">
+Welcome to <strong>Cafee⁹'</strong> – a cozy corner for coffee lovers and relaxation seekers.
+We serve freshly brewed coffee, delicious pastries, and create a warm, inviting atmosphere
+for you to unwind, meet friends, or catch a quiet moment for yourself.
+</p>
+
+<p class="text-center">
+Our team carefully selects high-quality coffee beans to ensure every sip is delightful.
+Come in, unwind, and enjoy a little moment of bliss at Cafee⁹'.
+</p>
+
+<p class="text-center">
+Our environment is designed to feel premium yet welcoming,
+giving you a spot to slow down and enjoy something that’s actually worth your time.
+<strong>Great coffee, done right.</strong>
+</p>
+
+</div>
+<!-- ===== ABOUT SECTION END ===== -->
+
+
+<!-- ===== BEST SELLERS START ===== -->
+<section class="container my-5">
+
+<h2 class="text-center fw-bold mb-4">Best Sellers</h2>
+
+<div class="row g-4 justify-content-center">
+
+<!-- Product 1 -->
+<div class="col-md-3">
+<div class="card border-0 shadow-lg best-card">
+<div class="badge bg-danger best-badge">Most Loved</div>
+
+<img src="{% static 'main/images/cappi.jpeg' %}"
+class="card-img-top"
+alt="Cappuccino">
+
+<div class="card-body text-center">
+<h5 class="card-title">Cappuccino</h5>
+<p class="text-muted small">Classic milky blend</p>
+<p class="fw-bold">₹160</p>
+</div>
+
+</div>
+</div>
+
+
+<!-- Product 2 -->
+<div class="col-md-3">
+<div class="card border-0 shadow-lg best-card">
+<div class="badge bg-warning text-dark best-badge">Hot Pick</div>
+
+<img src="{% static 'main/images/mocha.webp' %}"
+class="card-img-top"
+alt="Mocha">
+
+<div class="card-body text-center">
+<h5 class="card-title">Cafe Mocha</h5>
+<p class="text-muted small">Choco infused espresso</p>
+<p class="fw-bold">₹180</p>
+</div>
+
+</div>
+</div>
+
+
+<!-- Product 3 -->
+<div class="col-md-3">
+<div class="card border-0 shadow-lg best-card">
+<div class="badge bg-primary best-badge">Top Rated</div>
+
+<img src="{% static 'main/images/latte.jpeg' %}"
+class="card-img-top"
+alt="Iced Latte">
+
+<div class="card-body text-center">
+<h5 class="card-title">Iced Latte</h5>
+<p class="text-muted small">Chilled perfection</p>
+<p class="fw-bold">₹150</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="text-center mt-4">
+<a href="/menu/" class="btn btn-dark px-4 py-2 rounded-pill">
+View Full Menu →
+</a>
+</div>
+
+</section>
+<!-- ===== BEST SELLERS END ===== -->
+
+
+<!-- ===== QUOTE START ===== -->
+<div class="container text-center quote-box py-3 my-4">
+<p class="fst-italic fw-bold text-center">
+“Sip, smile, conquer the day. Because every day is a victory."
+</p>
+</div>
+<!-- ===== QUOTE END ===== -->
+
+
+{% endblock %}

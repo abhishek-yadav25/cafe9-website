@@ -1,0 +1,306 @@
+body {
+  background-color: hsl(0, 7%, 3%);
+}
+p {
+  text-align: justify;
+}
+footer p {
+  text-align: center !important;
+}
+
+/* Navbar transparency */
+#top-nav {
+  background-color: black;
+}
+
+/* FORCE solid navbar across all pages */
+.navbar.navbar-dark.bg-dark {
+  background-color: #000 !important;
+  opacity: 1 !important;
+}
+
+/* Ensure link visibility */
+.navbar.navbar-dark.bg-dark .nav-link {
+  color: #fff !important;
+}
+
+.navbar.bg-dark {
+  background-color: #0c000099 !important;
+}
+
+.best-card {
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.best-card:hover {
+  transform: translateY(-8px);
+}
+
+.best-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+}
+
+.best-card img {
+  height: 230px;
+  object-fit: cover;
+}
+
+
+
+
+/* About Section Visible */
+.about-section {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 8px;
+}
+
+/* Quote white background + black text */
+.quote-box {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 8px;
+}
+
+
+.container {
+  background: none !important;
+  color: inherit !important;
+}
+                                                    /* menus css */
+
+   .section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+  border-bottom: 3px solid #6b4f3b; /* coffee-brown accent */
+}
+
+.menu-card {
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease;
+  background: #ffffff;
+}
+
+.menu-card img {
+  height: 170px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(16, 24, 40, .12);
+}
+
+.card-body { 
+  padding: 0.9rem 1rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.card-text {
+  color: #222;
+  font-size: 1rem;
+}
+.menu-card .card-body {
+  text-align: center;
+}
+
+
+                                                    /* services css */
+  
+.hero-services {
+      height: 70vh;
+      background: url('images/cafee.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: white;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+    }
+    .hero-text {
+      position: relative;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .service-card {
+      transition: .25s;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 4px 18px rgba(0,0,0,0.15);
+    }
+
+    .events {
+  background: #191919;
+  color: #eee;
+  padding: 70px 20px;
+}
+
+.events .section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.event-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.event-text {
+  max-width: 450px;
+}
+
+.event-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.event-text p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.event-text ul {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.event-text ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.event-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  text-decoration: none;
+  border-radius: 4px;
+  background: #d4a574;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.event-btn:hover {
+  background: #fff;
+}
+
+.event-img img {
+  width: 360px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-icon {
+  width: 300px;       /* smaller size */
+  height: 250px;      /* smaller size */
+  object-fit: contain;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+                                                    /* about css */
+      
+ #sustain .sustain-card {
+      height: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      transition: transform .25s, box-shadow .25s;
+      border: 1px solid #e6e6e6;
+      background: #fff;
+    }
+    #sustain .sustain-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    /* FIX: image container with strict height and overflow */
+    #sustain .sustain-img-container {
+      width: 100% !important;
+      height: 120px;           /* change this value to 100/140/160 as needed */
+      min-height: 120px;
+      max-height: 120px;
+      overflow: hidden;
+      flex: 0 0 auto;
+    }
+
+    /* Force image to fill container — use !important to override other rules */
+    #sustain .sustain-img {
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: cover !important;
+      object-position: center center !important;
+      display: block !important;
+    }
+
+    /* Card body stays consistent height */
+    #sustain .sustain-body {
+      padding: 18px;
+      text-align: center;
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #promise-section {
+  background-image: url('images/fam.jpg'); /* change filename */
+  background-size: cover;       /* full width, no stretch */
+  background-position: center;  /* perfect alignment */
+  background-repeat: no-repeat;
+  min-height: 300px;            /* adjust height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+background-position: center;
+
+}
+
+
+#promise-section > .container {
+  position: relative;
+  z-index: 1; /* bring text above overlay */
+}
+#promise-section * {
+  color:white !important;
+}
+
+
+
+
